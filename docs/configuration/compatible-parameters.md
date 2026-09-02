@@ -34,6 +34,7 @@ TokenSpeed-specific behavior explicitly.
 | `--block-size` | KV cache block size. |
 | `--enable-prefix-caching` | Enable prefix cache reuse. |
 | `--no-enable-prefix-caching` | Disable prefix cache reuse. |
+| `--disable-kvstore` | Disable host KVStore (enabled by default). |
 | `--enforce-eager` | Disable device-graph execution (CUDA Graph on CUDA, ACL Graph on NPU). |
 | `--max-cudagraph-capture-size` | Largest decode device-graph capture size. |
 | `--tensor-parallel-size`, `--tp` | Set attention tensor parallel size. |
@@ -62,4 +63,4 @@ TokenSpeed-specific behavior explicitly.
 - Pass the model path positionally, then keep `--trust-remote-code`, `--max-model-len`, `--kv-cache-dtype`, `--gpu-memory-utilization`, `--max-num-seqs`, `--tensor-parallel-size`, `--reasoning-parser`, and `--tool-call-parser` when the model needs them.
 - Review `--max-num-batched-tokens` before copying it. TokenSpeed usually wants `--chunked-prefill-size` for per-iteration scheduling.
 - Review backend names. TokenSpeed backends are optimized for its runtime and kernel packages.
-- Keep TokenSpeed-specific `--attn-tp-size`, `--moe-tp-size`, `--disaggregation-*`, and `--kvstore-*` only when the deployment needs those features.
+- Keep TokenSpeed-specific `--attn-tp-size`, `--moe-tp-size`, `--disaggregation-*`, and `--kvstore-*` / `--disable-kvstore` only when the deployment needs those features.
