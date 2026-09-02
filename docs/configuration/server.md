@@ -21,6 +21,7 @@ For a compact compatibility table, see
 | `--revision` | Model branch, tag, or commit. |
 | `--download-dir` | Hugging Face download/cache directory. |
 | `--hf-overrides` | JSON overrides for model configuration values. |
+| `--device` | Device type: `cuda` (default) or `npu`. |
 
 ## Precision And Quantization
 

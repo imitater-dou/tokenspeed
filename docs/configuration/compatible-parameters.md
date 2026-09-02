@@ -20,7 +20,7 @@ TokenSpeed-specific behavior explicitly.
 | `--quantization` | Weight quantization method. |
 | `--quantization-param-path` | KV cache scaling-factor file. |
 | `--max-model-len` | Maximum sequence length. |
-| `--device` | Device type. TokenSpeed currently serves CUDA. |
+| `--device` | Device type: `cuda` (default) or `npu`. |
 | `--served-model-name` | OpenAI-compatible served model name. |
 | `--revision` | Model revision. |
 | `--download-dir` | Model download directory. |
