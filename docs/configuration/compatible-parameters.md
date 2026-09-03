@@ -31,6 +31,7 @@ TokenSpeed-specific behavior explicitly.
 | `--chat-template` | Chat template name or path. |
 | `--gpu-memory-utilization` | GPU memory fraction used for weights and KV cache. |
 | `--max-num-seqs` | Maximum concurrent sequences. |
+| `--enable-mixed-batch` | Allow prefill and decode in the same scheduler iteration. |
 | `--block-size` | KV cache block size. |
 | `--enable-prefix-caching` | Enable prefix cache reuse. |
 | `--no-enable-prefix-caching` | Disable prefix cache reuse. |
