@@ -14,9 +14,9 @@ Blog: https://lightseek.org/blog/tokenspeed-inkling.html
 ## Docker
 
 ### nvidia
-docker pull lightseekorg/tokenspeed:latest
+docker pull lightseekorg/tokenspeed:tml
 ### amd
-docker pull lightseekorg/tokenspeed-amd:latest
+docker pull lightseekorg/tokenspeed-amd:tml
 
 ## Launch command
 
